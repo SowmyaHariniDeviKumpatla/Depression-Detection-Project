@@ -46,7 +46,7 @@ The primary objective of this project is to identify depression from online post
    ```bash
    python manage.py runserver
 
-## Project Setup
+## License
 This project is an ongoing project that current students are still working on. The source code is made available for educational and informational purposes. By viewing this repository, you agree not to make any changes or distribute it further. The repository is licensed under the MIT License, but contributions and modifications are not allowed at this stage.
 
 
