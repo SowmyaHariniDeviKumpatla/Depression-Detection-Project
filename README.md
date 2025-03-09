@@ -29,14 +29,25 @@ The primary objective of this project is to identify depression from online post
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/Depression-Detection-Project.git
-2. **Install dependencies**: You need to install the required Python libraries
+   git clone https://github.com/SowmyaHariniDeviKumpatla/Depression-Detection-Project.git
+2. **Install dependencies**:  
+   Ensure you have a virtual environment set up, then install the required libraries:
    ```bash
    pip install -r requirements.txt
-3. **Database Setup**: Ensure that you have MySQL set up with the appropriate database (depression). Update the DATABASES settings in settings.py if needed.
-4. **Run the project:**: You need to install the required Python libraries
+3. **Database Setup**:
+   Set up MySQL and create the database:
+   ```bash
+   CREATE DATABASE depression;
+   Update the DATABASES settings in settings.py with your MySQL credentials.
+   Run migrations to set up the necessary database tables:
+   ```bash
+   python manage.py migrate
+5. **Run the project:**:
    ```bash
    python manage.py runserver
+
+## Project Setup
+This project is an ongoing project that current students are still working on. The source code is made available for educational and informational purposes. By viewing this repository, you agree not to make any changes or distribute it further. The repository is licensed under the MIT License, but contributions and modifications are not allowed at this stage.
 
 
 
