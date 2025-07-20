@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project detects depression based on users' posts. Users can upload their posts in the form of text files, image files, or audio files. The system uses machine learning (SVM - Support Vector Machine) to analyze the posts and classify them as either "Negative" (depression-related) or "Positive" (normal posts). If a user's post is detected as negative (indicating depression), the system sends motivating messages to help the user.
+This project detects depression based on users' posts. Users can upload their posts in the form of text files, image files, or audio files. The system uses machine learning (SVM - Support Support Vector Machine) to analyze the posts and classify them as either "Negative" (depression-related) or "Positive" (normal posts). If a user's post is detected as negative (indicating depression), the system sends motivating messages to help the user.
 
 ## Objective
 
@@ -34,4 +34,31 @@ The primary objective of this project is to identify depression from online post
 
 Clone the repository:
 ```bash
-git clone [https://github.com/SowmyaHariniDeviKumpatla/Depression-Detection-Project.git](https://github.com/SowmyaHariniDeviKumpatla/Depression-Detection-Project.git)
+git clone https://github.com/SowmyaHariniDeviKumpatla/Depression-Detection-Project.git
+```
+
+Install dependencies:
+Ensure you have a virtual environment set up, then install the required libraries:
+```bash
+pip install -r requirements.txt
+```
+
+Database Setup: Set up MySQL and create the database:
+```SQL
+CREATE DATABASE depression;
+```
+
+Update the DATABASES settings in settings.py with your MySQL credentials.
+Run migrations to set up the necessary database tables:
+```Bash
+python manage.py migrate
+```
+
+Run the project:
+```Bash
+python manage.py runserver
+```
+
+## License
+
+This project is intended for educational and demonstration purposes only.
